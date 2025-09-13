@@ -9,7 +9,7 @@ Group:		Development/Python
 BuildRequires:	python
 BuildSystem:	python
 BuildArch:	noarch
-
+Provides:  python3.11dist(pip-requirements-parser)=%{version}
 %description
 pip requirements parser - a mostly correct pip requirements parsing library because it uses pip's own code.
 
