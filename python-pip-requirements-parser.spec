@@ -14,6 +14,7 @@ BuildArch:	noarch
 BuildRequires:	python
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildRequires:	python%{pyver}dist(wheel)
 Provides:  python%{pyver}dist(pip-requirements-parser) = %{version}-%{release}
 %description
