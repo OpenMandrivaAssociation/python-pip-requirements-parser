@@ -3,7 +3,7 @@
 
 Name:		python-pip-requirements-parser
 Version:	32.0.1
-Release:	3
+Release:	4
 Source0:	https://files.pythonhosted.org/packages/source/p/%{module}/%{module}-%{version}.tar.gz
 Summary:	pip requirements parser - a mostly correct pip requirements parsing library because it uses
 URL:		https://pypi.org/project/pip-requirements-parser/
@@ -19,6 +19,10 @@ BuildRequires:	python%{pyver}dist(wheel)
 Provides:  python%{pyver}dist(pip-requirements-parser) = %{version}-%{release}
 %description
 pip requirements parser - a mostly correct pip requirements parsing library because it uses pip's own code.
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{py_sitedir}/%{oname}.py
