@@ -5,7 +5,7 @@ Name:		python-pip-requirements-parser
 Version:	32.0.1
 Release:	4
 Source0:	https://files.pythonhosted.org/packages/source/p/%{module}/%{module}-%{version}.tar.gz
-Summary:	pip requirements parser - a mostly correct pip requirements parsing library because it uses
+Summary:	Parser for pip requirement files
 URL:		https://pypi.org/project/pip-requirements-parser/
 License:	MIT
 Group:		Development/Python
